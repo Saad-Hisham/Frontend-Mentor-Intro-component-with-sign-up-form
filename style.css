@@ -133,11 +133,12 @@ form>div.error::before {
 form>div.error::after {
     content: "please fill this input";
     position: absolute;
-    left: 75%;
+    left: 40%;
     font-size: 11px;
     color: #ff7978;
     top: 61px;
     font-style: italic;
+    width: 100%;
 }
 @media only screen and (max-width: 1200px) {
     .body-container {
