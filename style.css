@@ -1,0 +1,176 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("./intro-component-with-signup-form-master/images/bg-intro-desktop.png");
+    background-color: #ff7978;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1112px;
+    min-width: 1112px;
+}
+
+.heading-container h1 {
+    color: white;
+    max-width: 415px;
+    font-size: 3rem;
+}
+
+.heading-container p {
+    color: white;
+    max-width: 494px;
+    font-weight: 100;
+}
+
+.form-container h2 {
+    background: #5d54a3;
+    color: white;
+    max-width: 537px;
+    font-size: 16px;
+    text-align: center;
+    padding: 22px 0px;
+    border-radius: 8px;
+    font-weight: 100;
+    box-shadow: -1px 5px 2px 0px rgba(221, 103, 103, 0.75);
+    -webkit-box-shadow: -1px 5px 2px 0px rgba(221, 103, 103, 0.75);
+    -moz-box-shadow: -1px 5px 2px 0px rgba(221, 103, 103, 0.75);
+}
+
+.form-container h2 span {
+    font-weight: bold;
+}
+
+form {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    min-height: 441px;
+    border-radius: 15px;
+    padding-top: 2rem;
+    box-shadow: -1px 5px 2px 0px rgba(221, 103, 103, 0.75);
+    -webkit-box-shadow: -1px 5px 2px 0px rgba(221, 103, 103, 0.75);
+    -moz-box-shadow: -1px 5px 2px 0px rgba(221, 103, 103, 0.75);
+    min-width: 542px;
+}
+
+form input {
+    max-width: 434px;
+    min-width: 434px;
+    margin: auto;
+    min-height: 55px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #dedede;
+    padding-left: 26px;
+    font-weight: bold;
+}
+
+form>div {
+    max-width: 434px;
+    min-width: 434px;
+    margin: auto;
+    margin-left: 38px;
+    position: relative;
+}
+
+input[type="submit"] {
+    min-width: 29rem;
+    background: #37cc8a;
+    font-weight: 500;
+    color: white;
+    box-shadow: -1px 5px 2px 0px #34b87e;
+    -webkit-box-shadow: -1px 5px 2px 0px #34b87e;
+    -moz-box-shadow: -1px 5px 2px 0px #34b87e;
+    cursor: pointer;
+    border: none;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #77e2b4;
+
+}
+
+form p {
+    max-width: 366px;
+    font-size: 10px;
+    margin: auto;
+    font-weight: bold;
+    color: #adabb8;
+}
+
+form p span {
+    color: #ff7978;
+}
+
+div.error input {
+    border: 2px solid #ff7978;
+}
+
+
+
+
+form>div.error::before {
+    content: "";
+    background-image: url(./intro-component-with-signup-form-master/images/icon-error.svg);
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 98%;
+    top: 18px;
+}
+form>div.error::after {
+    content: "please fill this input";
+    position: absolute;
+    left: 75%;
+    font-size: 11px;
+    color: #ff7978;
+    top: 61px;
+    font-style: italic;
+}
+@media only screen and (max-width: 1200px) {
+    .body-container {
+        max-width: 376px;
+        min-width: 376px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-container {
+        max-width: 375px;
+    }
+
+    form {
+        max-width: 375px;
+        min-width: 375px;
+    }
+
+    form>div {
+        min-width: 17rem;
+        margin: auto;
+        margin-left: 38px;
+        position: relative;
+    }
+
+    form input {
+        max-width: 100%;
+        min-width: 100%;
+
+    }
+
+    input[type="submit"] {
+        min-width: 82%;
+
+    }
+}
