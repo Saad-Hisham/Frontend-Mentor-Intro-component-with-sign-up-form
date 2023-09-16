@@ -179,3 +179,10 @@ form>div.error::after {
 
     }
 }
+footer {
+    color: white;
+}
+footer a {
+    color: white;
+    font-weight: bold;
+}
